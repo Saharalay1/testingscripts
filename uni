@@ -26,3 +26,7 @@ stroke.Color = Color3.fromRGB(255, 255, 255)
 stroke.Thickness = 2
 stroke.Transparency = 0
 stroke.Parent = frame
+
+frame.InputBegan:Connect(function(input)
+print(input.UserInputType)
+end)
