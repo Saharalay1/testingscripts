@@ -1,0 +1,14 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local maingui = Instance.new("ScreenGui")
+maingui.ResetOnSpawn = false
+maingui.Parent = player.PlayerGui
+
+local frame = Instance.new("Frame")
+frame.Parent = maingui
+frame.Size = UDim2.new(0, 400, 0, 400)
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+frame.BackgroundColor3 = Color3.fromRGB(145, 12, 194)
+frame.BorderSizePixel = 0
